@@ -6,114 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="desription"
         content="Aplicación web de e-commerce inspirada en Temu, desarrollada con Node.js y Express. Implementa catálogo de productos, arquitectura modular y una interfaz moderna orientada a la experiencia del usuario.">
-    <link rel="stylesheet" href="./css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <link rel="icon" href="./imagenes/logo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+
     <title>Termu</title>
+
 </head>
 
 <body>
     <header>
-        <input type="text" placeholder="Buscar en Termu">
-        <img src="./imagenes/logo.png" alt="">
 
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav>
-            <ul>
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas Oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="">Creá tu cuenta</a></li>
-                <li><a href="">Ingresá</a></li>
-                <li><a href="">Mis compras</a></li>
-            </ul>
+        <section class="box-header">
+            <img class="logo" src="./imagenes/logo.png" alt="">
+
+            <input class="search-bar" type="text" placeholder="Buscar en Termu">
+
+            <button class="lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="burguer-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <button class="user">
+                <i class="fa-regular fa-circle-user"></i>
+            </button>
+
+            <button class="cart">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+
+        </section>
+
+        <p class="mano">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+        </p>
+
+        <nav class="navbar">
+            <a href="">Ofertas</a>
+            <a href="">Tiendas Oficiales</a>
+            <a href="">Vender</a>
+            <a href="">Ayuda</a>
         </nav>
+
+        <nav class="navbar">
+            <a class="login-bar" href="">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a>
+            <a class="login-bar" href="">Ingresá <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="compras" href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
+        </nav>
+
     </header>
 
     <main>
-        <section>Basado en tu ultima vista
+        <section>
+            <h2 class="titulares">Basado en tu ultima vista</h2>
             <article>
                 <img class="articulos" src="./imagenes/cafetera.jpg" alt="">
-                <p>$6.770</p>
-                <p>40% OFF</p>
-                <p>Cafetera Moulinex</p>
+                <p class="precio">$6.770</p>
+                <p class="descuento">40% OFF</p>
+                <p class="descripciones">Cafetera Moulinex</p>
             </article>
 
             <article>
                 <img class="articulos" src="./imagenes/macbook.jpg" alt="">
-                <p>$230.000</p>
-                <p>20% OFF</p>
-                <p>MacBook Pro 2019</p>
+                <p class="precio">$230.000</p>
+                <p class="descuento">20% OFF</p>
+                <p class="descripciones">MacBook Pro 2019</p>
             </article>
 
             <article>
                 <img class="articulos" src="./imagenes/galaxy.jpg" alt="">
-                <p>$70.500</p>
-                <p>10% OFF</p>
-                <p>Samsung Galaxy Z flip6</p>
+                <p class="precio">$70.500</p>
+                <p class="descuento">10% OFF</p>
+                <p class="descripciones">Samsung Galaxy Z flip6</p>
             </article>
 
             <article>
                 <img class="articulos" src="./imagenes/smart.jpg" alt="">
-                <p>$700.000</p>
-                <p>15% OFF</p>
-                <p>Smart TV - Led TV - electrooutlet</p>
+                <p class="precio">$700.000</p>
+                <p class="descuento">15% OFF</p>
+                <p class="descripciones">Smart TV - Led TV - electrooutlet</p>
             </article>
         </section>
 
-        <section>Sección de Ofertas
+        <section>
+            <h2 class="titulares">Sección de Ofertas</h2>
             <article>
                 <img class="articulos" src="./imagenes/cafetera.jpg" alt="">
-                <p>$6.770</p>
-                <p>40% OFF</p>
-                <p>Cafetera Moulinex</p>
+                <p class="precio">$6.770</p>
+                <p class="descuento">40% OFF</p>
+                <p class="descripciones">Cafetera Moulinex</p>
             </article>
 
             <article>
                 <img class="articulos" src="./imagenes/macbook.jpg" alt="">
-                <p>$230.000</p>
-                <p>20% OFF</p>
-                <p>MacBook Pro 2019</p>
+                <p class="precio">$230.000</p>
+                <p class="descuento">20% OFF</p>
+                <p class="descripciones">MacBook Pro 2019</p>
             </article>
 
             <article>
                 <img class="articulos" src="./imagenes/galaxy.jpg" alt="">
-                <p>$70.500</p>
-                <p>10% OFF</p>
-                <p>Samsung Galaxy Z flip6</p>
+                <p class="precio">$70.500</p>
+                <p class="descuento">10% OFF</p>
+                <p class="descripciones">Samsung Galaxy Z flip6</p>
             </article>
 
             <article>
                 <img class="articulos" src="./imagenes/smart.jpg" alt="">
-                <p>$700.000</p>
-                <p>15% OFF</p>
-                <p>Smart TV - Led TV - electrooutlet</p>
+                <p class="precio">$700.000</p>
+                <p class="descuento">15% OFF</p>
+                <p class="descripciones">Smart TV - Led TV - electrooutlet</p>
             </article>
         </section>
     </main>
 
     <footer>
-        <h4>Pagá con tarjeta o en efectivo</h4>
-        <p>
-            Con Termu Cash, tenés cuotas sin interés con tarjeta o efectivo en
-            puntos de pago. ¡Y siempre es seguro!
-        </p>
 
-        <h4>Envío gratis desde los $40.000</h4>
-        <p>
-            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-            productos. Es un beneficio de Mercado Puntos
-        </p>
+        <section>
+            <img class="credit-card" src="./imagenes/credit-card-solid.png"
+                alt="Una fotografía de una tarjeta de credito">
 
-        <h4>Seguridad, de principio a fin</h4>
-        <p>
-            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-            porque estás siempre protegid@.
-        </p>
+            <h2>Pagá con tarjeta o en efectivo</h2>
 
-        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            <p>Con Termu Cash, tenés cuotas sin</p>
+            <p>interés con tarjeta o efectivo enpuntos de</p>
+            <p>pago. ¡Y siempre es seguro!</p>
+
+        </section>
+
+        <section>
+            <img class="caja" src="./imagenes/gift-solid.png" alt="">
+
+            <h2>Envío gratis desde los $40.000</h2>
+
+            <p>Solo por estar registrad@ en Termu</p>
+            <p>tenés envíos gratis en miles deproductos. Es</p>
+            <p>un beneficio de Mercado Puntos</p>
+        </section>
+
+        <section>
+            <img class="seguridad" src="./imagenes/user-shield-solid.png" alt="">
+
+            <h2>Seguridad, de principio a fin</h2>
+
+            <p>¿No te gusta? ¡Devolvelo! En Termu</p>
+            <p>no hay nada que no puedas hacer porque</p>
+            <p>estás siempre protegid@.</p>
+        </section>
+
+        <p class="copy">Copyright © 2020-2026 MercadoLiebre S.R.L.</p>
     </footer>
 </body>
 
